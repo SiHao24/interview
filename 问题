@@ -1,0 +1,42 @@
+挑战性的：
+  微前端
+    发现问题、解决问题，推动问题的能力
+    是什么？
+    为什么用微前端？（应用拆分、技术战无关、基应用，子应用）
+    做了那些工作？
+      报错导致页面白屏
+      依赖升级
+      改动小
+      方案可行
+    遇到的问题：
+      文件404 -》UMD（ESModule 和 commonJs的混合）
+      libraryName跟父应用注册的时候保持一致
+      入口文件判断 window.powerByQIANKUN
+      子应用过滤
+      silder header做隐藏
+（10个工作日）
+
+webpack
+  config/分组文件
+  compiler -》 生成依赖树
+  plugin 发布订阅 监听钩子函数 输出文件到dist文件夹
+
+webpack性能优化
+开发环境、正式环境
+  开发环境：
+    构建速度：DllPlugin、热更新、自动刷新、多进程，babel-loader
+  生产环境：
+    体积大小、文件数量、AST（eslint、babel，webpack）
+
+new 
+继承
+bind，call， apply
+节流，防抖
+深拷贝（循环引用）
+promise
+发布订阅
+斐波那且数列
+柯里化
+
+CSRF（攻击原理） http refer字段 sameSite
+复杂请求、简单请求
