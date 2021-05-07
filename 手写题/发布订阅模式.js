@@ -32,8 +32,8 @@
 
   once(name, fn) {
     const func = (...args) => {
-      this.off(name, func)
       fn.apply(this, args)
+      this.off(name, fn)
     }
   }
 

@@ -1,3 +1,6 @@
+/**
+ * 将多个参数的函数转换成一系列使用一个参数的函数的技术
+ */
 function add(a, b, c) {
   return a + b + c
 }
@@ -92,3 +95,13 @@ function curryFinal(fn, args, holes) {
 var currysss = fn => judge = (...args) => args.length === fn.length ? fn(...args) : (arg) => judge(...args, arg)
 const test11 = currysss(add)
 console.log(test11(1)(100, 22))
+
+function curry(fn , ...rest) {
+  return function (...rest1) {
+    if ([...rest, ...rest1].length >= fn.length) {
+      return fn(...rest, ...rest1)
+    } else {
+      return curry(fn, ...rest, ...rest1)
+    }
+  }
+}

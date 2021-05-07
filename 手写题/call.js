@@ -11,7 +11,6 @@ function test() {
 }
 const obj = {
   a: 2,
-  test:test
 }
 test.myCall1(obj)
 

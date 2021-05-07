@@ -1,10 +1,10 @@
 Function.prototype.myBind = function (context, ...rest) {
   const fn = this
   return function (...rest1) {
-    return fn.apply(context,[...rest,...rest1])
+    return fn.apply(context, [...rest, ...rest1])
   }
 }
-function test(){
+function test() {
   console.log(this.a, this.b)
 }
 const obj = {

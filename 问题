@@ -40,3 +40,7 @@ promise
 
 CSRF（攻击原理） http refer字段 sameSite
 复杂请求、简单请求
+
+1、webpack 工程化（打包+页面加载 http）
+2、JS基础还好
+3、promise（静态方法 + 原型方法）
